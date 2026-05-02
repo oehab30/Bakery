@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Instagram, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
 
 function Footer() {
