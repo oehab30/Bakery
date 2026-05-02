@@ -14,7 +14,6 @@ function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
     { name: 'Menu', href: '#menu' },
     { name: 'About us', href: '#about' },
     { name: 'Gallery', href: '#gallery' },
@@ -32,8 +31,8 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="text-2xl font-bold text-[#2d231e] tracking-tight">
+          <div className="shrink-0 flex items-center">
+            <a href="#" className="text-2xl font-bold text-[#2d231e] tracking-tight hover:text-amber-700 transition-colors duration-300">
               SweetRise
             </a>
           </div>

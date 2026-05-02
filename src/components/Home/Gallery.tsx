@@ -19,7 +19,7 @@ const images = [
     className: "md:col-span-1 md:row-span-1"
   },
   {
-    src: "https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1000&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1711043484522-ad01c2bd769b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM1fHx8ZW58MHx8fHx8",
     className: "md:col-span-2 md:row-span-1"
   },
   {
@@ -39,7 +39,7 @@ function Gallery() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase  flex items-center justify-center gap-2"
+              className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase"
             >
               <AnimatedLine text="Our Gallery" lines={1}/>
             </motion.p>

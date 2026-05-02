@@ -6,8 +6,6 @@ function Hero() {
     <div className="relative w-full min-h-screen flex flex-col items-center pt-32 pb-20 overflow-hidden bg-white">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-[65vh] bg-[#e5dfd5]" style={{ clipPath: 'ellipse(160% 100% at 50% 0%)' }}></div>
-      <div className="absolute top-[20%] left-1/2 -translate-x-1/2 opacity-10 pointer-events-none w-[800px] h-[600px] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-multiply"></div>
-
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center mt-12 md:mt-24">
       
           <AnimatedLine/>
@@ -41,10 +39,11 @@ function Hero() {
           <motion.div 
             animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            className="absolute -top-6 md:-top-10 -right-4 md:right-10 z-20 bg-white/90 backdrop-blur-md rounded-full px-6 py-3 shadow-xl border border-[#e5dfd5] flex items-center gap-3"
-          >
+            className="absolute -top-6 md:-top-10 -right-4 md:right-10 z-20 bg-white/90 backdrop-blur-md rounded-full px-6 py-3 shadow-xl border border-[#e5dfd5] flex items-center gap-3
+             "
+            >
             <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
-            <span className="text-[#2d231e] font-bold text-xs tracking-wider uppercase">Baking Now</span>
+            <span className="text-[#2d231e] font-bold text-xs tracking-wider uppercase ">Baking Now</span>
           </motion.div>
 
           <div className="relative w-full max-w-3xl rounded-t-[150px] rounded-b-[40px] md:rounded-t-[250px] md:rounded-b-[50px] overflow-hidden shadow-[0_40px_80px_rgba(45,35,30,0.15)] border-[8px] md:border-[12px] border-white z-10 group">
