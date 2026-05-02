@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AnimatedLine from './AnimatedLine';
 
 function About() {
   return (
@@ -13,9 +14,9 @@ function About() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase mb-4"
-          >
-            What We Do
+            className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase  flex items-center justify-center gap-2"
+            >
+            <AnimatedLine text="What We Do"/>
           </motion.p>
           <motion.h2 
             initial={{ opacity: 0, y: 10 }}

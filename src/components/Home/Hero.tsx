@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AnimatedLine from './AnimatedLine';
 
 function Hero() {
   return (
@@ -9,14 +10,8 @@ function Hero() {
       <div className="absolute top-[20%] left-1/2 -translate-x-1/2 opacity-10 pointer-events-none w-[800px] h-[600px] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-multiply"></div>
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center mt-12 md:mt-24">
-        <motion.p 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-[#8c7b6f] text-sm font-bold tracking-[0.3em] uppercase mb-6 font-sans"
-        >
-          The Art of Baking
-        </motion.p>
+      
+          <AnimatedLine/>
         
         <motion.h1 
           initial={{ opacity: 0, scale: 0.95 }}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AnimatedLine from './AnimatedLine';
 
 const images = [
   {
@@ -39,9 +40,9 @@ function Gallery() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase mb-4"
+              className="text-[#8c7b6f] text-sm font-bold tracking-[0.2em] uppercase  flex items-center justify-center gap-2"
             >
-              Our Gallery
+              <AnimatedLine text="Our Gallery" lines={1}/>
             </motion.p>
             <motion.h2 
               initial={{ opacity: 0, y: 10 }}
